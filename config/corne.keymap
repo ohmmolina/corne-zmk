@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     keymap {
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &kp N1  &kp N2     &kp N3  &kp N4  &kp N5       &kp N6         &kp N7     &kp N8     &kp N9            &kp N0             &trans
-&kp LCTRL     &kp D   &kp A      &kp V   &kp X   &kp PG_UP    &kp PAGE_DOWN  &kp LEFT   &kp UP     &kp DOWN          &kp RIGHT          &trans
-&kp LEFT_ALT  &none   &kp COMMA  &kp Z   &kp U   &none        &kp BACKSLASH  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-                                 &trans  &trans  &trans       &kp APOS       &kp GRAVE  &mo 3
+&kp LCTRL  &kp N1    &kp N2     &kp N3  &kp N4        &kp N5       &kp N6         &kp N7     &kp N8     &kp N9            &kp N0             &trans
+&trans     &kp D     &kp A      &kp V   &kp X         &kp PG_UP    &kp PAGE_DOWN  &kp LEFT   &kp UP     &kp DOWN          &kp RIGHT          &trans
+&trans     &kp LALT  &kp COMMA  &kp Z   &kp U         &none        &kp BACKSLASH  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+                                &trans  &kp LEFT_WIN  &trans       &kp APOS       &kp GRAVE  &mo 3
             >;
         };
 
